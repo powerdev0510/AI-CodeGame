@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  include ./include/header.jade
+  .user-info
+    .avatar
+      img(src=user.avatar)
+    h2.name #{user.name}
+    p.bio #{user.bio}
+    if code
+      p 全球排名
+      if code.rank
+        .rank #{code.rank}
+      else
+        .rank 暂无
+      if me
+        if user.id == me.id
+          a(href="/code/editor")
+            button.button 编辑我的 AI
+        else
+          a(href="/#{user.login}/vs/#{me.login}")
+            button.button 发起挑战
+    else
+      if me
+        if user.id == me.id
+          a(href="/code/editor")
+            button.button 创建我的 AI
+        else
+          a(href="/#{user.login}/vs/#{me.login}")
+            button.button 发起挑战

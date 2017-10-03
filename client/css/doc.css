@@ -1,0 +1,106 @@
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+
+aside {
+  width: 30%;
+  float: left;
+}
+article {
+  position: relative;
+  top: -40px;
+  width: 70%;
+  float: right;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+article h1 code,
+article h2 code,
+article h3 code,
+article h4 code,
+article h5 code,
+article h6 code {
+  text-transform: none;
+}
+
+article h2 {
+  margin: 60px 0 0;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+article h2 span {
+  color: #ccc;
+  font-size: 14px;
+  display: block;
+  font-weight: normal;
+}
+
+article .center {
+}
+
+article ul.elements {
+  margin: 20px 0 20px 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+article ul.elements li {
+  position: relative;
+  min-height: 70px;
+  margin-bottom: 10px;
+  float: left;
+  width: 45%;
+}
+
+article ul.elements li:nth-child(odd) {
+  margin-right: 10%;
+}
+
+article ul.elements img {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+article ul.elements p {
+  margin: 0;
+  padding-left: 70px;
+  color: #999;
+}
+
+article table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+article table td {
+}
+
+article table th {
+  border-bottom: 2px solid #ddd;
+}
+
+article table td,
+article table th {
+  text-align: left;
+  vertical-align: top;
+  padding: 8px;
+}
+
+article table tbody tr:nth-child(odd) {
+  border-top: 1px solid #ccc;
+  background: #f9f9f9;
+}

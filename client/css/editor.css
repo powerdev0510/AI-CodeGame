@@ -1,0 +1,114 @@
+@import "../../node_modules/codemirror/lib/codemirror.css";
+@import "../../node_modules/codemirror/theme/ambiance.css";
+@import "../../node_modules/codemirror/addon/lint/lint.css";
+
+html, body { height:100%; }
+
+.CodeMirror {
+  font-family: 'Source Code Pro';
+  line-height: 1.2;
+  font-size: 14px;
+  height: 100%;
+}
+
+.CodeMirror-activeline-background {
+  background: none repeat scroll 0% 0% rgba(255, 255, 255, 0.131) !important;
+}
+
+.toolbar {
+  position: fixed;
+  width: 500px;
+  right: 14px;
+  bottom: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  z-index: 999;
+}
+
+.toolbar .preview-options {
+  float: left;
+  overflow: hidden;
+  height: 34px;
+  padding: 4px 4px 0;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.2);
+  width: 430px;
+}
+
+.preview-options button.preview-btn {
+  float: right;
+  margin-right: 4px;
+}
+
+.toolbar input {
+  width: 180px;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  float: left;
+  outline: none;
+  color: #fff;
+}
+
+.toolbar select {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  margin-left: 4px;
+  height: 28px;
+  color: #fff;
+  border-radius: 6px;
+  outline: none;
+  width: 75px;
+  float: left;
+}
+
+.toolbar .item {
+  float: right;
+  margin-top: 4px;
+}
+
+.toolbar button {
+  padding: 8px 16px;
+  border-radius: 6px;
+  color: #fff;
+  background: #68bb68;
+}
+
+#editor {
+  width: 100%;
+  height: 100%;
+}
+
+.playground-container {
+  position: fixed;
+  width: 500px;
+  height: 490px;
+  right: 14px;
+  bottom: 10px;
+  z-index: 999;
+}
+
+.js-playground {
+  visibility: hidden;
+}
+
+.js-close-playground {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: rgba(255, 255, 255, 0.5);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  line-height: 16px;
+  text-align: center;
+  color: #444;
+  z-index: 999;
+  font-size: 12px;
+}
+
+#playground {
+  border-radius: 10px;
+  overflow: hidden;
+}

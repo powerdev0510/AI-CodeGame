@@ -1,0 +1,35 @@
+header.top
+  a(href="/")
+    img.header-logo(src="/public/images/header-logo.png", width="174", height="25", alt="Code Game")
+  ul.pull-left
+    if me
+      li
+        a(href="/#{me.login}") 个人主页
+    else
+      li
+        a(href="/") 首页
+    li
+      a(href="/rank") 排行榜
+    li
+      a(href="/tournaments") 杯赛
+    li
+      a(href="/doc") 文档
+    li
+      a(href="https://github.com/luin/CodeGame/issues") 讨论
+    if me && me.isAdmin()
+      li
+        a(href="/map") 地图
+  if me
+    ul.pull-right
+      li.ad
+        a(href="/tournaments/1") 参与 Coding AI 邀请赛拿奖品
+      li #{me.name}
+      li
+        a(href="/account/logout") 退出
+
+  else
+    ul.pull-right
+      li.ad
+        a(href="/tournaments/1") 快来参与 Coding.net AI 邀请赛
+      li
+        a(href="/account/github") 通过 GitHub 登录

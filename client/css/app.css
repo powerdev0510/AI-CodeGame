@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #403c2f;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+}
+
+button {
+  outline: none;
+}
+
+#preload { display: none; }
+
+a { color: #68bb68; text-decoration: none; }
+a:hover { color: #568a56; transition: 0.5s; }
+
+header.top {
+  position: relative;
+  margin: 0;
+  padding: 0 20px;
+  background-color: #f1f1f1;
+  border-bottom: 1px solid #dcdcdc;
+  overflow: hidden;
+}
+
+header .ad {
+  padding: 4px 8px;
+  border-radius: 4px;
+  background: #e7c251;
+  font-size: 12px;
+  color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+header .ad:hover {
+  background: #d9b139;
+}
+
+header .ad a {
+  color: #fff;
+}
+
+.wrap {
+  overflow: hidden;
+  height: auto;
+  width: 100%;
+  position: absolute;
+  top: 57px;
+  bottom: 0;
+}
+
+.wrap.is-dark {
+  background: #202020;
+}
+
+.top .container {
+  width: 980px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.top ul {
+  padding: 0;
+  list-style: none;
+}
+
+.top ul li {
+  float: left;
+}
+
+.top ul.pull-right li {
+  margin-left: 20px;
+}
+
+.top ul.pull-left li {
+  margin-right: 20px;
+}
+
+.top ul.pull-right {
+  float: right;
+}
+
+.top ul.pull-left {
+  float: left;
+}
+
+.header-logo {
+  position: absolute;
+  padding: 14px 0;
+  left: 50%;
+  top: 0;
+  margin-left: -87px;
+}
+
+@import "element.css";
+@import "index.css";
+@import "user.css";
+@import "editor.css";
+@import "vs.css";
+@import "game.css";
+@import "doc.css";
+@import "rank.css";
+@import "tournament.css";
+@import "map-editor.css";
